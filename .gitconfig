@@ -1,0 +1,6 @@
+[user]
+	name = Mike
+	email = 31090859+mike-fam@users.noreply.github.com
+[core]
+	autocrlf = input
+	editor = vim
