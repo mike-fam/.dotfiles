@@ -69,15 +69,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
-
-# zsh-vim-mode plugin
-VIM_MODE_VICMD_KEY='jk'
-MODE_INDICATOR_VIINS='%F{15}<%F{8}INSERT<%f'
-MODE_INDICATOR_VICMD='%F{10}<%F{2}NORMAL<%f'
-MODE_INDICATOR_REPLACE='%F{9}<%F{1}REPLACE<%f'
-MODE_INDICATOR_SEARCH='%F{13}<%F{5}SEARCH<%f'
-MODE_INDICATOR_VISUAL='%F{12}<%F{4}VISUAL<%f'
-MODE_INDICATOR_VLINE='%F{12}<%F{4}V-LINE<%f'
+ZVM_VI_INSERT_ESCAPE_BINDKEY=jk
 
 
 # Which plugins would you like to load?
@@ -85,7 +77,7 @@ MODE_INDICATOR_VLINE='%F{12}<%F{4}V-LINE<%f'
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-vim-mode yarn)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-vi-mode yarn)
 
 
 source $ZSH/oh-my-zsh.sh
