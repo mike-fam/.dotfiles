@@ -4,3 +4,5 @@
 [core]
 	autocrlf = input
 	editor = vim
+[pull]
+	rebase = false
