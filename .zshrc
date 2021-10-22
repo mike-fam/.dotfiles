@@ -123,3 +123,6 @@ RPS1='${MODE_INDICATOR_PROMPT} ${vcs_info_msg_0_}'
 
 # Created by `pipx` on 2021-05-07 04:48:38
 export PATH="$PATH:/Users/mike/.local/bin"
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
