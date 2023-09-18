@@ -77,7 +77,7 @@ ZVM_VI_INSERT_ESCAPE_BINDKEY=jk
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(aws git nx-completion zsh-autosuggestions zsh-syntax-highlighting zsh-vi-mode yarn vscode)
+plugins=(aws git zsh-autosuggestions zsh-syntax-highlighting zsh-vi-mode yarn vscode)
 
 
 source $ZSH/oh-my-zsh.sh
@@ -125,8 +125,6 @@ RPS1='${MODE_INDICATOR_PROMPT} ${vcs_info_msg_0_}'
 export PATH="$PATH:/Users/mike/.local/bin"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
-eval $(thefuck --alias)
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
