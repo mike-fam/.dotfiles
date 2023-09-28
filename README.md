@@ -7,7 +7,7 @@ Just my dotfiles. Nothing to see here.
 ```shell
 curl -O https://gist.githubusercontent.com/mike-fam/2e96087b42abd80776ad5d93c11c7c03/raw/dotfiles_install.sh
 chmod +x dotfiles_install.sh
-./dotfile_install.sh git@github.com:mike-fam/.dotfiles.git  # change this to your own repository
+./dotfiles_install.sh git@github.com:mike-fam/.dotfiles.git  # change this to your own repository
 ```
 2. This will download the dotfiles in this repository and replace all your existing dotfiles.
 3. Your replaced dotfiles are backed up in the `~/dotfiles-backup` folder.
