@@ -112,7 +112,6 @@ alias grep="grep --color=always"
 alias tutor-timetable="ssh uqmpham6@tutor-timetable.zones.eait.uq.edu.au"
 alias q="ssh uqmpham6@q.zones.eait.uq.edu.au"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-alias gocode='cd ~/Stuff/code'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -129,3 +128,15 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+gocode() {
+    cd "$HOME/Stuff/code/$1"
+}
+
+_gocode_autocomplete() {
+  local cur_word="${COMP_WORDS[COMP_CWORD]}"
+  local suggestions=$(ls -d ~/Stuff/code/*/ 2>/dev/null | xargs -n1 basename)
+  COMPREPLY=( $(compgen -W "$suggestions" -- "$cur_word") )
+}
+
+complete -F _gocode_autocomplete gocode
