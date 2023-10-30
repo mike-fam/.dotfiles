@@ -6,7 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/.local/bin:$HOME/bin:/usr/local/bin:/Library/PostgreSQL/13/bin:$PATH
+export PATH=$HOME/.local/bin:$HOME/bin:/usr/local/bin:/Library/PostgreSQL/13/bin:/Users/$USER/.local/bin:node_modules/.bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -70,15 +70,14 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Would you like to use another custom folder than $ZSH/custom?
 ZSH_CUSTOM="$HOME/.oh-my-zsh-custom"
 ZVM_VI_INSERT_ESCAPE_BINDKEY=jk
-
+ZVM_INIT_MODE=sourcing
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(aws git zsh-autosuggestions zsh-syntax-highlighting zsh-vi-mode yarn vscode)
-
+plugins=(aws git zsh-autosuggestions zsh-vi-mode zsh-syntax-highlighting yarn vscode)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -120,9 +119,6 @@ setopt PROMPT_SUBST
 # Note the single quotes
 RPS1='${MODE_INDICATOR_PROMPT} ${vcs_info_msg_0_}'
 
-# Created by `pipx` on 2021-05-07 04:48:38
-export PATH="$PATH:/Users/mike/.local/bin"
-
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 export NVM_DIR="$HOME/.nvm"
@@ -140,3 +136,4 @@ _gocode_autocomplete() {
 }
 
 complete -F _gocode_autocomplete gocode
+
