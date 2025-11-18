@@ -1,8 +1,12 @@
 set number
+set ruler
 set relativenumber
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set re=0
+set autoindent
+set smartindent
 syntax on
 inoremap jk <Esc>
 inoremap JK <Esc>
