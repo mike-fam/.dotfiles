@@ -17,3 +17,7 @@
 	path = .oh-my-zsh-custom/themes/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k
     branch = master
+[submodule "/Users/mpham/.oh-my-zsh-custom/plugins/time-tracker"]
+	path = /Users/mpham/.oh-my-zsh-custom/plugins/time-tracker
+	url = https://github.com/mike-fam/time-tracker-plugin.git
+    branch = main
